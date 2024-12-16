@@ -1,12 +1,11 @@
-let a = 0;
-let sum = 0;
-let result = 1;
+let count = 0;
+let totalSum = 0;
+let average = 1;
 
 for (let i = 1; i <= 500; i++) {
-  sum += i;
-  a++;
+  totalSum += i; 
+  count++;         
 }
 
-result = sum / a;
-console.log(result);
-
+average = totalSum / count;  
+console.log(average);

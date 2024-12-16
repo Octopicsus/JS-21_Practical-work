@@ -1,14 +1,15 @@
-let a = 0;
-let b = "";
-let loopMax = 10;
+let multiCand = 0;
+let multiTable = "";
+let loopMax = 9;
 
-for (let i = 0; i < loopMax; i++) {
-  a++;
+for (let row = 0; row < loopMax; row++) {
+  multiCand++;
 
-  for (let j = 0; j <= loopMax; j++) {
-    b += `${a} * ${j} = ${a * j} \n`;
+  for (let column = 2; column <= loopMax; column++) {
+    multiTable += `${multiCand} * ${column} = ${
+      multiCand * column
+    } \n`;
   }
-
 }
 
-console.log(b);
+console.log(multiTable);
