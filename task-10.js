@@ -1,14 +1,9 @@
-let multiCand = 0;
+const loopMax = 9;
 let multiTable = "";
-let loopMax = 9;
 
-for (let row = 0; row < loopMax; row++) {
-  multiCand++;
-
+for (let row = 1; row <= loopMax; row++) {
   for (let column = 2; column <= loopMax; column++) {
-    multiTable += `${multiCand} * ${column} = ${
-      multiCand * column
-    } \n`;
+    multiTable += `${row} * ${column} = ${row * column}\n`;
   }
 }
 
